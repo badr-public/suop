@@ -2,6 +2,8 @@ server:
   port: 8888
   
 spring:
+  application:
+    name: 'config'
   cloud:
     config:
       server:
@@ -9,4 +11,4 @@ spring:
             enabled: false
         git:
           uri: https://github.com/betobadran/suop-config/
-          search-paths: common-data, mail, gw
+          search-paths: common-data, mail, gw, eureka

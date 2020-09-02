@@ -1,8 +1,8 @@
 rootProject.name = 'suop'
 
 include 'Modules:CommonData'
-include 'Modules:Gw:Rest'
-include 'Modules:Gui'
+include 'Modules:Gw'
+//include 'Modules:Gui'
 include 'Modules:Common'
 include 'Modules:Config'
 include 'Modules:Eureka'
