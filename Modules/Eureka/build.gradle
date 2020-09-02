@@ -1,0 +1,24 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+    id 'java'
+    id 'eclipse'
+}
+
+eclipse {
+    project.name = 'suop-eureka'
+}
+
+group = "${suopGroup}"
+version = "${suopVersion}"
+sourceCompatibility = "${suopSourceCompatibility}"
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

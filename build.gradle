@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+    set('suopSourceCompatibility', "14")
+    set('suopGroup', "br.com.badr.suop")
+    set('suopVersion', "0.0.1-SNAPSHOT")
+	set('springCloudVersion', "Hoxton.SR8")
+	set('springBootVersion', "2.3.3.RELEASE")
+	set('springDependencyManagementVersion', "1.0.10.RELEASE")
+}
+
+allprojects {
+    repositories {
+	    mavenCentral()
+    }
+}

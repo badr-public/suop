@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'eclipse'
+}
+
+description 'Reference data for suop'
+
+repositories {
+	mavenCentral()
+}
+
+group = 'br.com.badr.suop'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '14'
+
+dependencies {
+	implementation project(':Modules:Common')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'br.com.badr.App'
+}
+
+eclipse {
+    project.name = 'suop-email'
+}

@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    password: suoplocal
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/suoplocal
+    username: suoplocal
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: 127.0.0.1
+    password: suop
+    username: suop
+    virtual-host: /suop
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

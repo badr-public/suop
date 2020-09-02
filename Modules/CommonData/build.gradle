@@ -1,0 +1,43 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+    id 'java'
+    id 'eclipse'
+}
+
+description 'Reference data for suop'
+
+repositories {
+	mavenCentral()
+}
+
+group = "${suopGroup}"
+version = "${suopVersion}"
+sourceCompatibility = "${suopSourceCompatibility}"
+
+dependencies {
+	implementation project(':Modules:Common')
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'mysql:mysql-connector-java'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'br.com.badr.App'
+}
+
+eclipse {
+    project.name = 'suop-common-data'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
