@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2020-09-14T19:42:54.482Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" version="13.7.0" etag="_il6VrRc1vAgqUNAeRne" type="github"><diagram id="GrUaVcMlBX8kDsU4qA1S">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-14T20:20:11.777Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="4SHfMAY8FxLzuXNYU_So" version="13.7.0" type="github">
+  <diagram id="GrUaVcMlBX8kDsU4qA1S" name="Page-1">
+    <mxGraphModel dx="460" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="40jVzZHvnFrucoZg_dZK-1" value="Config server" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="100" y="110" width="82.2" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40jVzZHvnFrucoZg_dZK-2" value="Eureka server" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="372" y="110" width="82.2" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40jVzZHvnFrucoZg_dZK-4" value="email sender" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="82.2" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40jVzZHvnFrucoZg_dZK-5" value="gateway" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="372" y="280" width="82.2" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40jVzZHvnFrucoZg_dZK-6" value="Auth" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="90" y="450" width="82.2" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40jVzZHvnFrucoZg_dZK-7" value="Gui" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/applications/microservice.svg;" vertex="1" parent="1">
+          <mxGeometry x="372" y="450" width="82.2" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
