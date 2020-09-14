@@ -13,7 +13,7 @@ public class UserService {
 	public static final String topicExchangeName = "commonData";
 	public static final String queueName = "commonData";
 	public static final String newUserKey = "user.new";
-
+	
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
 	

@@ -1,0 +1,18 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: 'config'
+  cloud:
+    config:
+      server:
+#        encrypt:
+#            enabled: false
+        native:
+          search-locations: /User/betob/dev/repo/badr/suop-config
+          #search-paths: common-data, mail, gw, eureka
+          
+#        git:
+#          uri: https://github.com/betobadran/suop-config
+#          search-paths: common-d

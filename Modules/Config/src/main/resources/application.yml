@@ -4,11 +4,9 @@ server:
 spring:
   application:
     name: 'config'
+  profiles:    active: native
   cloud:
     config:
       server:
-        encrypt:
-            enabled: false
-        git:
-          uri: https://github.com/badr-public/suop-config
-          search-paths: common-data, mail, gw, eureka
+        native:
+          search-locations: /User/betob/dev/repo/badr/suop-config

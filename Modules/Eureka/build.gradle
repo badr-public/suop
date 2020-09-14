@@ -6,7 +6,7 @@ plugins {
 }
 
 eclipse {
-    project.name = 'suop-eureka'
+    project.name = 'suop-eureka-server'
 }
 
 group = "${suopGroup}"

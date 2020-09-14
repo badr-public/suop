@@ -29,7 +29,7 @@ public class GetConfigTest {
 		public void getConfigByAppProfile(String app) {
 			String profile = "default";
 			String data = this.restTemplate.getForObject("http://localhost:" + port + "/" + app + "/" + profile, String.class);
-			assertThat(data).contains("https://github.com/badr-public/suop-config/" + app + "/" + app + ".yml");
+			assertThat(data).contains("https://github.com/betobadran/suop-config/" + app + "/" + app + ".yml");
 		}
 	
 }

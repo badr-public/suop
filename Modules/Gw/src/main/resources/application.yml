@@ -15,9 +15,9 @@ management:
         include:
         - "routes"
         
-spring:
-  rabbitmq:
-    host: 127.0.0.1
-    password: suop
-    username: suop
-    virtual-host: /suop
+#spring:
+#  rabbitmq:
+#    host: 127.0.0.1
+#    password: suop
+#    username: suop
+#    virtual-host: /suop

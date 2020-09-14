@@ -1,4 +1,4 @@
-package br.com.badr.commondata.services;
+package br.com.badr.commondata.consumer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,13 +14,13 @@ import org.springframework.stereotype.Component;
 import br.com.badr.common.ConsumerIf;
 import br.com.badr.common.entity.Message;
 import br.com.badr.common.entity.User;
-import br.com.badr.commondata.repository.UserRepository;
+import br.com.badr.commondata.services.UserServiceInternal;
 
 @Component
 public class UserConsumer implements ConsumerIf<Message> {
 	
 	@Autowired
-	private UserRepository repository;
+	private UserServiceInternal internalService;
 	
 	@Autowired
 	private RabbitTemplate rabbitTemplate;
@@ -53,7 +53,7 @@ public class UserConsumer implements ConsumerIf<Message> {
 				&& msg.obj instanceof User) {
 			Integer id = ((User) msg.obj).id;
 			if (!usersCache.containsKey(id)) {
-				user = repository.save((User) msg.obj);
+				user = internalService.save((User) msg.obj);
 				usersCache.put(user.id, user);
 			}
 			else {

@@ -7,5 +7,5 @@ spring:
         encrypt:
             enabled: false
         git:
-          uri: https://github.com/badr-public/suop-config
+          uri: https://github.com/betobadran/suop-config
           search-paths: common-data, mail, gw, eureka
